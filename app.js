@@ -38,10 +38,9 @@ const parse = (val) => {
     .replaceAll("}", ")")
     .replaceAll("{", "(");
 
-//   console.log(finalval);
+  //   console.log(finalval);
   return finalval;
 };
-
 
 var addl = true;
 var numin = false;
@@ -225,6 +224,8 @@ function show() {
       default:
         break;
     }
+
+    if (i === 0 && "0123456789".includes(val[i])) addl = true;
     values.innerHTML += `${addl ? l.show() : ""}${num.show()}`;
   }
 }
