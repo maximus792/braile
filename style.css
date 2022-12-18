@@ -40,6 +40,7 @@ html {
   margin: 1rem;
   border: 2px solid black;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 
 .line span {
