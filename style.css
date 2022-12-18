@@ -1,0 +1,67 @@
+html {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+ 
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.container, html, body{
+    background: #f5f5f5!important;
+}
+.container{
+    margin: 1rem;
+    margin-top: 3rem;
+}
+.container-num {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.nvalue {
+  margin: 1rem;
+  width: 3rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.values {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  margin: 1rem;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.line span {
+  font-size: 1.5rem;
+}
+h2 {
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 230px) {
+  .line span {
+    font-size: 1rem;
+  }
+  .values {
+    display: none;
+  }
+}
+
+.mathfield {
+  border: 1px solid black;
+  margin: 1rem;
+  border-radius: 3px;
+  padding: 1rem;
+}
