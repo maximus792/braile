@@ -30,11 +30,13 @@ class Num {
 }
 
 const parse = (val) => {
+  console.log(val);
   var finalval = latex_to_js(val);
 
   finalval = finalval
     .replaceAll("\\frac{", "(")
     .replaceAll("sqrt", "")
+    .replaceAll("\\cdot", "*")
     .replaceAll("}", ")")
     .replaceAll("{", "(");
 
